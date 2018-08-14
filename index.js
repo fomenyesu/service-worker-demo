@@ -41,7 +41,7 @@ if ('serviceWorker' in navigator) {
     $('#isSupport').text('不支持');
 }
 
-fetch('https://api.github.com/_private/browser/stats', {
+fetch('https://fomenyesu.github.io/service-worker-demo/api.json', {
 	method: 'get'
 }).then(function(response) {
 	console.log(response);
@@ -50,7 +50,7 @@ fetch('https://api.github.com/_private/browser/stats', {
     console.log(err);
 });
 setTimeout(()=>{
-fetch('https://api.github.com/_private/browser/stats', {
+fetch('https://fomenyesu.github.io/service-worker-demo/api.json', {
 	method: 'get'
 }).then(function(response) {
 	console.log(response);

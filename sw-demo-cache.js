@@ -39,7 +39,7 @@ self.addEventListener('activate', function(e) {
 
 self.addEventListener('fetch', function(e) {
   console.log("fetch",e.request.url);
-  if(e.request.url === "https://api.github.com/_private/browser/stats"){
+  if(e.request.url === "https://fomenyesu.github.io/service-worker-demo/api.json"){
     // 在此编写缓存策略
     e.respondWith(
       // 可以通过匹配缓存中的资源返回
